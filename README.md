@@ -90,7 +90,7 @@ You can interact with these endpoints via HTTP (if using SSE transport) or by em
 
 #### Claude Desktop integration:
 
-To set up Claude Desktop as a Ghidra MCP client, go to `Claude` -> `Settings` -> `Developer` -> `Edit Config` -> `claude_desktop_config.json` and add the following:
+To set up Claude Desktop as a Zeek MCP client, go to `Claude` -> `Settings` -> `Developer` -> `Edit Config` -> `claude_desktop_config.json` and add the following:
 
 ```json
 {
