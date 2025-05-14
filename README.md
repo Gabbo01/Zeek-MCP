@@ -82,13 +82,40 @@ You need to use an LLM that can support the MCP tools usage by tools call.
 
 2. **`parselogs(logfile: str) -> DataFrame`**
 
-   * **Description:** Parses a single Zeek `.log` file and returns a pandas DataFrame.
+   * **Description:** Parses a single Zeek `.log` file and returns the parsed content.
 
-3. **`parse_all_logs_as_str(directory: str = '.') -> str`**
-
-   * **Description:** Searches for all `.log` files under `directory`, parses each, and returns a formatted concatenated string.
 
 You can interact with these endpoints via HTTP (if using SSE transport) or by embedding in LLM client (eg: Claude Desktop):
+
+## Integration on Claude Desktop:
+
+To set up Claude Desktop as a Ghidra MCP client, go to `Claude` -> `Settings` -> `Developer` -> `Edit Config` -> `claude_desktop_config.json` and add the following:
+
+```json
+{
+  "mcpServers": {
+    "Zeek-mcp": {
+      "command": "python",
+      "args": [
+        "/ABSOLUTE_PATH_TO/Bridge_Zeek_MCP.py",
+      ]
+    }
+  }
+}
+```
+
+Alternatively, edit this file directly:
+```
+/Users/YOUR_USER/Library/Application Support/Claude/claude_desktop_config.json
+```
+## 5ire Integration
+Another MCP client that supports multiple models on the backend is [5ire](https://github.com/nanbingxyz/5ire). To set up Zeek-MCP, open 5ire and go to `Tools` -> `New` and set the following configurations:
+
+1. Tool Key: ZeekMCP
+2. Name: Zeek-MCP
+3. Command: `python /ABSOLUTE_PATH_TO/Bridge_Zeek_MCP.py`
+
+Alternatively you can use Chainlit framework and use the [documentation](https://docs.chainlit.io/advanced-features/mcp) to integrate the MCP server.
 
 ---
 
@@ -99,4 +126,4 @@ You can interact with these endpoints via HTTP (if using SSE transport) or by em
 
 ## License
 
-Distributed under the MIT License. See `LICENSE` for more information.
+See `LICENSE` for more information.
