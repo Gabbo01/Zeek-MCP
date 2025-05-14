@@ -2,7 +2,7 @@
 
 # Zeek-MCP
 
-This repository provides a set of utilities to build an MCP server (Model Context Protocol) that you can use with your chatbot client.
+This repository provides a set of utilities to build an MCP server (Model Context Protocol) that you can integrate with your chatbot client.
 
 ---
 
@@ -73,6 +73,7 @@ python main.py --mcp-host 127.0.0.1 --mcp-port 8081 --transport sse
 
 
 ### 4. Use the MCP tools
+You need to use an LLM that can support the MCP tools usage by tools call.
 
 1. **`execzeek(pcap_path: str) -> str`**
 
