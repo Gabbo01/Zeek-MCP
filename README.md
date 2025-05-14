@@ -115,7 +115,7 @@ Another MCP client that supports multiple models on the backend is [5ire](https:
 2. Name: Zeek-MCP
 3. Command: `python /ABSOLUTE_PATH_TO/Bridge_Zeek_MCP.py`
 
-Alternatively you can use Chainlit framework and use the [documentation](https://docs.chainlit.io/advanced-features/mcp) to integrate the MCP server.
+# Alternatively you can use Chainlit framework and follow the [documentation](https://docs.chainlit.io/advanced-features/mcp) to integrate the MCP server.
 
 ---
 
