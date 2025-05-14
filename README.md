@@ -64,7 +64,7 @@ The repository exposes three main MCP tools and a command-line entry point:
 ### 3. Run the MCP server
 
 ```bash
-python main.py --mcp-host 127.0.0.1 --mcp-port 8081 --transport sse
+python Bridge_Zeek_MCP.py --mcp-host 127.0.0.1 --mcp-port 8081 --transport sse
 ```
 
 * `--mcp-host`: Host for the MCP server (default: `127.0.0.1`).
