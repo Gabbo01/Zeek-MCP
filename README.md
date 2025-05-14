@@ -1,6 +1,6 @@
 # Zeek-MCP
 
-This repository provides a set of utilities to build an MCP server (Model Context Protocol) that you can use with your LLM client:
+This repository provides a set of utilities to build an MCP server (Model Context Protocol) that you can use with your LLM client.
 
 ---
 
