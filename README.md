@@ -70,7 +70,7 @@ python Bridge_Zeek_MCP.py --mcp-host 127.0.0.1 --mcp-port 8081 --transport sse
 * `--mcp-host`: Host for the MCP server (default: `127.0.0.1`).
 * `--mcp-port`: Port for the MCP server (default: `8081`).
 * `--transport`: Transport protocol, either `sse` (Server-Sent Events) or `stdio`.
-
+![start](images/start.png)
 
 ### 4. Use the MCP tools
 You need to use an LLM that can support the MCP tools usage by tools call.
