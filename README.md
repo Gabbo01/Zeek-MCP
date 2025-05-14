@@ -2,7 +2,7 @@
 
 # Zeek-MCP
 
-This repository provides a set of utilities to build an MCP server (Model Context Protocol) that you can integrate with your chatbot client.
+This repository provides a set of utilities to build an MCP server (Model Context Protocol) that you can integrate with your LLM chatbot client.
 
 ---
 
@@ -120,7 +120,7 @@ Alternatively you can use Chainlit framework and use the [documentation](https:/
 ---
 
 ## Examples
-An example of MCP tools usage from a chainlit chatbot client, it was used an example pcap file (you can find few in pcaps folder)
+An example of MCP tools usage from a chainlit chatbot client, it was used an example pcap file (you can find fews in pcaps folder)
 ```
 In that case the used model was claude-3.7-sonnet-reasoning-gemma3-12b
 ```
