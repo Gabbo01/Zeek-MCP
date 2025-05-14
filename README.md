@@ -19,7 +19,6 @@ This repository provides a set of Python utilities and MCP (Model Context Protoc
   * [2. Install dependencies](#2-install-dependencies)
   * [3. Run the MCP server](#3-run-the-mcp-server)
   * [4. Use the MCP tools](#4-use-the-mcp-tools)
-* [Code Overview](#code-overview)
 * [Examples](#examples)
 * [License](#license)
 
