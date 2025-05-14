@@ -56,7 +56,7 @@ pip install -r requirements.txt
 > **Note:** If you don’t have a `requirements.txt`, install directly:
 >
 > ```bash
-> pip install pandas mcp-server
+> pip install pandas mcp
 > ```
 
 ---
@@ -75,7 +75,6 @@ python main.py --mcp-host 127.0.0.1 --mcp-port 8081 --transport sse
 * `--mcp-port`: Port for the MCP server (default: `8081`).
 * `--transport`: Transport protocol, either `sse` (Server-Sent Events) or `stdio`.
 
-Once running, the server exposes two endpoints:
 
 ### 4. Use the MCP tools
 
@@ -92,56 +91,12 @@ Once running, the server exposes two endpoints:
 
    * **Description:** Searches for all `.log` files under `directory`, parses each, and returns a formatted concatenated string.
 
-You can interact with these endpoints via HTTP (if using SSE transport) or by embedding in your Python code:
-
-```python
-from mcp.client import MCPClient
-
-client = MCPClient(transport='sse', host='127.0.0.1', port=8081)
-
-# Execute Zeek
-result = client.call('execzeek', pcap_path='capture.pcap')
-print(result)
-
-# Parse a log
-df = client.call('parselogs', logfile='conn.log')
-print(df.head())
-```
-
----
-
-## Code Overview
-
-The main script (`main.py`) implements:
-
-* **`parse_zeek_log(path)`**: Reads Zeek `.log`, extracts headers (`#fields`), constructs a DataFrame.
-* **`parse_all_logs_as_str(directory)`**: Aggregates multiple logs into a single string for display.
-* **`execzeek(pcap_path)`**: MCP tool to run Zeek on PCAP and report generated files.
-* **`parselogs(logfile)`**: MCP tool to parse a single log file.
-* **`main()`**: Argument parser and MCP server launcher.
+You can interact with these endpoints via HTTP (if using SSE transport) or by embedding in LLM client (eg: Claude Desktop):
 
 ---
 
 ## Examples
 
-1. **Run Zeek and parse logs manually**
-
-   ```bash
-   # Run Zeek on sample.pcap
-   python main.py --transport stdio execzeek sample.pcap
-
-   # Parse the resulting conn.log
-   python main.py --transport stdio parselogs conn.log
-   ```
-
-2. **Aggregate all logs into a string**
-
-   ```python
-   from your_module import parse_all_logs_as_str
-
-   combined = parse_all_logs_as_str('logs/')
-   print(combined)
-   ```
 
 ---
 
