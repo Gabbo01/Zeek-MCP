@@ -1,6 +1,6 @@
 # Zeek-MCP
 
-This repository provides a set of Python utilities and MCP (Message Control Protocol) tools to:
+This repository provides a set of Python utilities and MCP (Model Context Protocol) tools to:
 
 * **Parse Zeek log files** (`.log`) into pandas DataFrames.
 * **Aggregate multiple logs** into a single formatted string.
