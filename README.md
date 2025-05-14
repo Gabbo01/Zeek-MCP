@@ -38,8 +38,8 @@ This repository provides a set of Python utilities and MCP (Message Control Prot
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/your-repo.git
-cd your-repo
+git clone https://github.com/your-username/your-repo.git](https://github.com/Gabbo01/Zeek-MCP
+cd Zeek-MCP
 ```
 
 ### 2. Install dependencies
