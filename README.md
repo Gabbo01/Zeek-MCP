@@ -121,7 +121,15 @@ Alternatively you can use Chainlit framework and use the [documentation](https:/
 
 ## Examples
 An example of MCP tools usage from a chainlit chatbot client: 
+```
+In that case the used model was claude-3.7-sonnet-reasoning-gemma3-12b
+```
+
 ![example1](images/example1.png)
+
+![example2](images/example2.png)
+
+![example3](images/example3.png)
 
 ---
 
