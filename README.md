@@ -120,7 +120,8 @@ Alternatively you can use Chainlit framework and use the [documentation](https:/
 ---
 
 ## Examples
-
+An example of MCP tools usage from a chainlit chatbot client: 
+![example1](images/example1.png)
 
 ---
 
