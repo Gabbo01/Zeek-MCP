@@ -1,11 +1,6 @@
 # Zeek-MCP
 
-This repository provides a set of Python utilities and MCP (Model Context Protocol) tools to:
-
-* **Parse Zeek log files** (`.log`) into pandas DataFrames.
-* **Aggregate multiple logs** into a single formatted string.
-* **Execute Zeek** on a PCAP file, generate `.log` outputs, and return their names.
-* **Expose** these functions as MCP endpoints via FastMCP.
+This repository provides a set of utilities to build an MCP server (Model Context Protocol) that you can use with your LLM client:
 
 ---
 
