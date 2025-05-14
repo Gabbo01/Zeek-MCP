@@ -87,7 +87,7 @@ You need to use an LLM that can support the MCP tools usage by tools call.
 
 You can interact with these endpoints via HTTP (if using SSE transport) or by embedding in LLM client (eg: Claude Desktop):
 
-## Integration on Claude Desktop:
+## Claude Desktop integration:
 
 To set up Claude Desktop as a Ghidra MCP client, go to `Claude` -> `Settings` -> `Developer` -> `Edit Config` -> `claude_desktop_config.json` and add the following:
 
@@ -108,7 +108,7 @@ Alternatively, edit this file directly:
 ```
 /Users/YOUR_USER/Library/Application Support/Claude/claude_desktop_config.json
 ```
-## 5ire Integration
+## 5ire Integration:
 Another MCP client that supports multiple models on the backend is [5ire](https://github.com/nanbingxyz/5ire). To set up Zeek-MCP, open 5ire and go to `Tools` -> `New` and set the following configurations:
 
 1. Tool Key: ZeekMCP
