@@ -32,7 +32,7 @@ This repository provides a set of utilities to build an MCP server (Model Contex
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/your-repo.git](https://github.com/Gabbo01/Zeek-MCP
+git clone https://github.com/Gabbo01/Zeek-MCP
 cd Zeek-MCP
 ```
 
