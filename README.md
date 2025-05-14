@@ -1,1 +1,1 @@
-# Zeek-mcp
+# Zeek-MCP
