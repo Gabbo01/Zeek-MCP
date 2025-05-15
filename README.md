@@ -59,7 +59,7 @@ pip install -r requirements.txt
 
 ## Usage
 
-The repository exposes three main MCP tools and a command-line entry point:
+The repository exposes two main MCP tools and a command-line entry point:
 
 ### 3. Run the MCP server
 
@@ -74,7 +74,7 @@ python Bridge_Zeek_MCP.py --mcp-host 127.0.0.1 --mcp-port 8081 --transport sse
 ![start](images/start.png)
 
 ### 4. Use the MCP tools
-You need to use an LLM that can support the MCP tools usage by tools call.
+You need to use an LLM that can support the MCP tools usage by calling the following tools:
 
 1. **`execzeek(pcap_path: str) -> str`**
 
