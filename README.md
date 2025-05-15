@@ -2,7 +2,7 @@
 
 # Zeek-MCP
 
-This repository provides a set of utilities to build an MCP server (Model Context Protocol) that you can integrate with your LLM chatbot client.
+This repository provides a set of utilities to build an MCP server (Model Context Protocol) that you can integrate with your conversational AI client.
 
 ---
 
